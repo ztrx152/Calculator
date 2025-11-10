@@ -5,13 +5,12 @@
 
 using namespace std;
 
-// Функция для очистки ввода
+
 void clearInput() {
     cin.clear();
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
 
-// Функция для отображения меню
 void displayMenu() {
     cout << "\n=== КАЛЬКУЛЯТОР ===" << endl;
     cout << "1. Сложение (+)" << endl;
@@ -24,7 +23,7 @@ void displayMenu() {
     cout << "Выберите операцию: ";
 }
 
-// Функция для получения числа от пользователя
+
 double getNumber(const string& prompt) {
     double number;
     while (true) {
